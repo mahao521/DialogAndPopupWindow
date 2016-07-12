@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="click"
+            type="android.view.View.OnClickListener"/>
+    </data>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="horizontal"
+        tools:context="com.puhuibao.dialogandpopupwindow.activity.SelectActivity">
+
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/picker_year"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="picker_year"
+            app:npv_HintText="@string/year_hint"
+            app:npv_ItemPaddingHorizental="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_ShowCount="3"
+            app:npv_TextArray="@array/year_display"
+            app:npv_TextSizeNormal="16sp"
+            app:npv_TextSizeSelected="20sp"
+            app:npv_WrapSelectorWheel="true"
+            app:npv_DividerColor="@color/colorPrimary"
+            android:onClick="@{click}"/>
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:id="@+id/picker_month"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="picker_month"
+            app:npv_HintText="@string/month_hint"
+            app:npv_ItemPaddingHorizental="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_ShowCount="3"
+            app:npv_TextArray="@array/month_display"
+            app:npv_TextSizeNormal="16sp"
+            app:npv_TextSizeSelected="20sp"
+            app:npv_WrapSelectorWheel="true"
+            android:onClick="@{click}"/>
+
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:layout_width="0dp"
+            android:id="@+id/picker_day"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="picker_day"
+            app:npv_HintText="@string/day_hint"
+            app:npv_ItemPaddingHorizental="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_ShowCount="3"
+            app:npv_TextArray="@array/day_display"
+            app:npv_TextSizeNormal="16sp"
+            app:npv_TextSizeSelected="20sp"
+            app:npv_WrapSelectorWheel="true"
+            app:npv_DividerColor="@color/colorPrimary"
+            app:npv_TextColorSelected="@color/colorAccent"
+            android:onClick="@{click}"
+            />
+
+        <cn.carbswang.android.numberpickerview.library.NumberPickerView
+            android:layout_width="0dp"
+            android:id="@+id/picker_half_day"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:contentDescription="picker_day"
+            app:npv_ItemPaddingHorizental="5dp"
+            app:npv_ItemPaddingVertical="5dp"
+            app:npv_ShowCount="3"
+            app:npv_TextArray="@array/half_day"
+            app:npv_TextSizeNormal="16sp"
+            app:npv_TextSizeSelected="20sp"
+            app:npv_WrapSelectorWheel="true"
+            app:npv_DividerColor="@color/colorPrimary"
+            app:npv_TextColorSelected="@color/colorAccent"
+            android:onClick="@{click}"
+            />
+
+    </LinearLayout>
+
+</layout>
+
